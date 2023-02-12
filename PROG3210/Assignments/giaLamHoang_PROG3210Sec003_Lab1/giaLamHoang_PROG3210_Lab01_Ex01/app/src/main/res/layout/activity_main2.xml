@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textViewEmployeeDetails"
+        android:layout_width="311dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@color/white"
+        android:text="EMPLOYEE DETAILS"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+
+        android:ems="10"
+        android:hint="User Name displayed from Login Details Activity"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmployeeDetails" />
+
+    <EditText
+        android:id="@+id/editTextYearlySalary"
+
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/white"
+
+        android:ems="10"
+        android:hint="enter yearly salary"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmployeeDetails" />
+
+    <EditText
+        android:id="@+id/editTextTaxRate"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="192dp"
+        android:background="@color/white"
+
+        android:ems="10"
+        android:hint="enter tax rate"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmployeeDetails" />
+
+    <TextView
+        android:id="@+id/textViewNetSalary"
+
+        android:layout_width="377dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="148dp"
+        android:text="Net salary after tax deduction displayed here"
+        android:background="@color/white"
+        android:textSize="18dp"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:onClick="buttonCalculate_Click"
+
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="48dp"
+        android:text="Calculate"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaxRate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
